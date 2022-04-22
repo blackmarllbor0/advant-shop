@@ -1,0 +1,42 @@
+.toolbar {
+  background-color: #383c40;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .you__city {
+    display: flex;
+    gap: .5rem;
+    .choise {
+      color: #94969b;
+    }
+
+    .city {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .toolbar_panel {
+    display: flex;
+    gap: 0.5rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

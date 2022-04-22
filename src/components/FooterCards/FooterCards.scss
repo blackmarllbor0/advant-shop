@@ -1,0 +1,18 @@
+.footer-cards {
+    background-color: #f3f3f3;
+    padding: 2rem 0 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        cursor: pointer;
+    }
+}
+
+span {
+    font-size: 13px;
+    color: rgb(117, 117, 117);
+}

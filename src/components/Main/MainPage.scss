@@ -1,0 +1,135 @@
+.main_product {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.news-fol {
+  display: flex;
+  gap: 5rem;
+  background-color: #f3f3f3;
+  padding: 0.9375rem 1.5625rem;
+  align-items: center;
+  border-radius: 5px;
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  form {
+    display: flex;
+    gap: 2rem;
+  }
+
+  input {
+    width: 550px;
+    border: 1px solid #e2e3e4;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #4f5158;
+    color: white;
+    padding: 0.4rem 3rem 0.4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(86, 89, 100);
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 5px;
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #0070e0;
+
+      &:hover {
+        color: #4b4f58;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.searc_review {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    border-radius: 8px;
+
+    h3 {
+        font-weight: 400;
+    }
+}
+
+.news-list {
+  display: flex;
+  gap: 2rem;
+
+  input {
+    width: 220px;
+    border: 1px solid #e2e3e4;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #4f5158;
+    color: white;
+    padding: 0.4rem 1rem 0.4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(86, 89, 100);
+    }
+  }
+
+  .gift {
+    img {
+        width: 100%;
+    }
+    div {
+        background-color: #3d597a;
+        color: white;
+        font-size: 19px;
+        padding: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}

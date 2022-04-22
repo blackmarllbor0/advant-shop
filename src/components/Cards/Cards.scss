@@ -1,0 +1,151 @@
+.covers {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  width: min-content;
+  cursor: pointer;
+
+  .link {
+    a {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    color: #0662c1;
+    text-decoration: none;
+    &:hover {
+      color: #4b4f58;
+      text-decoration: underline;
+    }
+  }
+
+  i {
+    color: #0662c1;
+    cursor: pointer;
+  }
+
+  .product {
+    display: flex;
+
+    a {
+      font-size: 0.75rem;
+    }
+  }
+  
+  .cover {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: space-between;
+
+    .description {
+      text-align: center;
+    }
+
+    .revies {
+      width: max-content;
+      margin: 10px auto;
+      // i {
+      //   color: #d1d1d1;
+      // }
+      // .star {
+      //   color: #fec419;
+      // }
+    }
+
+    .color_border {
+      // margin: 10px auto;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #f8b643;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .color {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+      }
+    }
+  }
+
+
+  .add_to_basket {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    span {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+
+    .button {
+			background-color: #0063c7;
+			color: white;
+			padding: .3rem .5rem;
+      border-radius: .3rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0070e0;
+      }
+
+      i {
+        color: white;
+        margin-right: 5px;
+        font-size: .8rem;
+      }
+
+      span {
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .quick_views {
+    position: absolute;
+    background-color: #cc0000;
+    color: white;
+    font-size: .6rem;
+    width: max-content;
+    padding: 2px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 130px;
+    margin-left: 70px;
+    display: none;
+
+    span {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #ff0404;
+    }
+
+    i {
+      color: white;
+      margin-right: 10px;
+    }
+  }
+
+  .colors {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+.revies {
+  display: flex;
+  gap: 3px;
+}

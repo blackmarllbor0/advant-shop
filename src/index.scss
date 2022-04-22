@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: #0070e0;
+
+  &:hover {
+    color: #4b4f58;
+    text-decoration: underline;
+  }
+}
+
+.reverse-link {
+  text-decoration: none;
+  color: #4b4f58;
+
+  &:hover {
+    color: #0070e0;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,55 @@
+.back {
+    background-color: #f8f8f8;
+    padding: 2rem 0;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info,
+.office,
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: max-content;
+
+  span {
+    color: #94969b;
+    font-size: 17px;
+  }
+}
+
+.social {
+  div {
+    display: flex;
+    gap: 0.4rem;
+  }
+}
+
+.reverse-link {
+  font-size: 13px;
+}
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    div {
+        div {
+            width: max-content;
+            padding: .7rem 1rem .7rem;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .gift {
+            background-color: #ff453c;
+            color: white;
+        }
+        .percent {
+            background-color: white;
+        }
+    }
+}
