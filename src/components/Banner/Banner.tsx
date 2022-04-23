@@ -12,7 +12,7 @@ const Banner = () => {
     <div className="banner">
       <div className="container">
         <div className="logo">
-          <Link to={'/'}>
+          <Link to={"/"}>
             <img src={data.logo.thumbnail} alt={data.logo.name} />
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
         <div className="aside_block">
           <div className="basket">
-            <i className="fa-duotone fa-basket-shopping" />
+            <i className="fa-solid fa-basket-shopping"></i>
             <span>Корзина пуста</span>
           </div>
           <div className="number">

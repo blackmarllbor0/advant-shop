@@ -90,7 +90,6 @@
 
     .button {
 			background-color: #0063c7;
-			color: white;
 			padding: .3rem .5rem;
       border-radius: .3rem;
       cursor: pointer;
@@ -107,6 +106,7 @@
 
       span {
         font-size: .8rem;
+        color: white;
       }
     }
   }

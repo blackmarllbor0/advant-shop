@@ -13,7 +13,7 @@
   }
 
   .logo {
-    margin: auto;
+    margin: auto 0;
   }
 
   ul {
@@ -36,17 +36,19 @@
   .row {
     display: flex;
     gap: 1rem;
+    align-items: baseline;
   }
 
   .filter {
     .button {
       background-color: $gray-700;
       color: white;
-      padding: 0.4rem 0.5rem 0.6rem 0.5rem;
+      padding: 9px 20px 9px;
       border: none;
       border-radius: 0.3rem;
       font-size: 0.85rem;
       width: max-content;
+      // height: max-content;
       cursor: pointer;
 
       span {
@@ -90,7 +92,7 @@
     .basket {
       border: 1px solid #e2e3e4;
       background-color: #fff;
-      font-size: .75rem;
+      font-size: 0.75rem;
       padding: 0.4rem;
       cursor: pointer;
 
@@ -103,8 +105,11 @@
       }
     }
     .number {
-      font-size: 1.5rem;
-      font-weight: 400;
+      span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+      }
     }
   }
 
@@ -112,7 +117,7 @@
     display: flex;
     gap: 0.5rem;
     a {
-      font-size: .6rem;
+      font-size: 0.8rem;
       text-decoration: none;
       color: #0662c1;
 

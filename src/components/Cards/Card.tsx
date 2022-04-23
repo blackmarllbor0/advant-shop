@@ -18,12 +18,12 @@ const Card: FC<PropsCard> = ({ image, title, price, color, revies, id }) => {
   let review = [];
   for (let i = 0; i < 5; i++) {
     review[i] = (
-      <i key={i} className="fa-duotone fa-star" style={{ color: "#d1d1d1" }} />
+      <i className="fa-solid fa-star" key={i} style={{ color: "#d1d1d1" }}></i>
     );
   }
   for (let i = 0; i < revies; i++) {
     review[i] = (
-      <i key={i} className="fa-duotone fa-star" style={{ color: "#fec419" }} />
+      <i className="fa-solid fa-star" key={i} style={{ color: "#fec419" }}></i>
     );
     if (i > 5) break;
   }

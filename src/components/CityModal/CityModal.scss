@@ -69,6 +69,10 @@
       border: 1px #e2e3e4 solid;
       border-radius: 6px;
       width: 260px;
+
+      &:focus {
+        border-color: #e2e3e4;
+      }
     }
 
     button {
@@ -104,4 +108,25 @@
   top: 0;
   cursor: pointer;
   font-weight: bold;
+}
+
+.town-list {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+
+  .town {
+    padding: 10px;
+    font-size: 13px;
+    width: 130px;
+    border: 1px solid #e2e3e400;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #e2e3e4;
+    }
+  }
 }

@@ -1,38 +1,67 @@
-import { FC, MouseEvent, useEffect } from "react";
+import { FC, useEffect, useState, KeyboardEvent, MouseEvent } from "react";
 
 import "./CityModal.scss";
 
 import data from "../../DATA.json";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import { useAction } from "../../hooks/useAction";
+import { toggleCityListType } from "../../types/cities";
+import CityList from "./CityList";
 
 type prop = {
   closeModal: () => void;
 };
 
-const CityModal: FC<prop> = (props) => {
-  const { cities, country } = userTypeSelector((state) => state.city);
-  const { setCountry } = useAction();
+interface List {
+  [key: string]: string[];
+}
 
-  const toggleActive = (counrty: string) => {
-    setCountry(counrty);
-  };
+const CityModal: FC<prop> = (props) => {
+  const [value, setValue] = useState<string>("");
+  const { country } = userTypeSelector((state) => state.city);
+  const { setCountry, setCityList, setActiveCity } = useAction();
 
   useEffect(() => {
-    fetch(
-      ""
-    ).then(data => data.json()).then(data => console.log(data)).catch(e => console.log(e))
+    toggleCityList(toggleCityListType, country);
   }, [country]);
 
-  const closeModalClick = () => {
-    props.closeModal();
+  const getCityList = (country: string = "rus"): void => {
+    const list: List = data.cityList;
+    const res: string[] = list[country];
+    setCityList(res);
   };
 
-  document.addEventListener("keydown", (event) => {
+  const toggleCityList = (toggle: any, country: string): void => {
+    const result = toggle[country];
+    getCityList(result);
+  };
+
+  const toggleActive = (toggleCounrty: string): void => {
+    if (toggleCounrty !== country) setCountry(toggleCounrty);
+  };
+
+  document.addEventListener("keydown", (event): void => {
     if (event.key === "Escape") {
       props.closeModal();
     }
   });
+
+  const closeModalClick = (): void => props.closeModal();
+
+  const searchCity = (event: KeyboardEvent<HTMLInputElement>) => {
+    data.cityList.all.forEach((item) => {
+      const city = item.toLowerCase(),
+        lvalue = value.toLowerCase();
+
+      if (city === lvalue) {
+        if (event.code === "Enter") {
+          setActiveCity(item);
+          setValue("");
+          props.closeModal();
+        }
+      }
+    });
+  };
 
   return (
     <>
@@ -57,10 +86,17 @@ const CityModal: FC<prop> = (props) => {
           <div className="search">
             <span>Ваш город:</span>
             <div>
-              <input type="text" placeholder="Введите город" />
+              <input
+                type="text"
+                placeholder="Введите город"
+                value={value}
+                onChange={(event) => setValue(event.target.value)}
+                onKeyUp={searchCity}
+              />
               <button>Выбрать</button>
             </div>
           </div>
+          <CityList closeModal={props.closeModal} />
         </div>
         <i className="fa-solid fa-xmark close-btn" onClick={closeModalClick} />
       </div>

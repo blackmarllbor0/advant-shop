@@ -3,7 +3,8 @@ import CityState, { CityAction, CityActionType } from "../../types/cities";
 
 const initialState: CityState = {
     country: 'Россия',
-    cities: []
+    cities: [],
+    activeCity: 'Москва'
 };
 
 export const cityReducer = (state: CityState = initialState, action: CityAction): CityState => {
@@ -15,6 +16,10 @@ export const cityReducer = (state: CityState = initialState, action: CityAction)
         case CityActionType.GET_CITY_LIST: return {
             ...state,
             cities: action.payload
+        }
+        case CityActionType.SET_ACTIVE_CITY: return {
+            ...state,
+            activeCity: action.payload
         }
         default: return state
     }
