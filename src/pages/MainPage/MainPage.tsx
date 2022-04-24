@@ -36,22 +36,22 @@ const MainPage = () => {
         </form>
       </div>
 
-      <div className="container news-list row">
+      <div className="container news-list rows">
         <div className="list">
           <h2>Новости</h2>
-          <div className="col">
+          <div className="cols">
             <Link to={"/"} className="n">
               Меган Фокс в апрельском номере журнала Jalouse
             </Link>
             <p>03 апреля 2021</p>
           </div>
-          <div className="col">
+          <div className="cols">
             <Link to={"/"} className="n">
               Состоялся показ Armani Prive на Неделе высокой моды в Париже
             </Link>
             <p>11 марта 2022</p>
           </div>
-          <div className="col">
+          <div className="cols">
             <Link to={"/"} className="n">
               Облачные перспективы Windows-8
             </Link>

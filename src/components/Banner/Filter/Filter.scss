@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .btn {
   padding: 9px 20px 9px;
   font-size: 13px;
@@ -19,4 +21,33 @@
   font-weight: 700;
   font-size: 16px;
   height: 47px !important ;
+}
+
+.categories {
+  position: absolute;
+  width: 165px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  top: 132px;
+  z-index: 10;
+  margin-left: -20px;
+
+  a {
+    padding: 15px 20px;
+    border-top: .1px solid rgb(202, 202, 202);
+    font-size: 14px;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  display: none;
 }
