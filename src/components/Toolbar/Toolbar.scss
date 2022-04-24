@@ -3,40 +3,17 @@
   padding: 0.5rem 0;
   font-size: 0.7rem;
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .you__city {
-    display: flex;
-    gap: .5rem;
-    .choise {
-      color: #94969b;
-    }
-
-    .city {
-      color: #fff;
-      text-decoration: underline;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
+  .choise {
+    color: #94969b;
   }
 
-  .toolbar_panel {
-    display: flex;
-    gap: 0.5rem;
+  .toolbar-link {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
 
-    a {
-      color: #fff;
+    &:hover {
       text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 }

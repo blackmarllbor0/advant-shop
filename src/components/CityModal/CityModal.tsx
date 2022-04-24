@@ -7,6 +7,7 @@ import { userTypeSelector } from "../../hooks/useTypeSelector";
 import { useAction } from "../../hooks/useAction";
 import { toggleCityListType } from "../../types/cities";
 import CityList from "./CityList";
+import DropDownCityList from "./DropDownCityList";
 
 type prop = {
   closeModal: () => void;
@@ -18,12 +19,11 @@ interface List {
 
 const CityModal: FC<prop> = (props) => {
   const [value, setValue] = useState<string>("");
+  const [dropList, setDropList] = useState<string[]>([]);
   const { country } = userTypeSelector((state) => state.city);
   const { setCountry, setCityList, setActiveCity } = useAction();
 
-  useEffect(() => {
-    toggleCityList(toggleCityListType, country);
-  }, [country]);
+  useEffect(() => toggleCityList(toggleCityListType, country), [country]);
 
   const getCityList = (country: string = "rus"): void => {
     const list: List = data.cityList;
@@ -48,17 +48,36 @@ const CityModal: FC<prop> = (props) => {
 
   const closeModalClick = (): void => props.closeModal();
 
-  const searchCity = (event: KeyboardEvent<HTMLInputElement>) => {
+  const searchCity = (
+    event: KeyboardEvent<HTMLInputElement> & MouseEvent<HTMLButtonElement>
+  ) => {
+    let list: string[] = [];
     data.cityList.all.forEach((item) => {
       const city = item.toLowerCase(),
         lvalue = value.toLowerCase();
-
       if (city === lvalue) {
         if (event.code === "Enter") {
           setActiveCity(item);
           setValue("");
           props.closeModal();
         }
+      }
+      if (city.includes(lvalue) && lvalue.length > 2) {
+        list.push(item);
+        setDropList(list);
+      }
+      if (value.length < 3) setDropList([]);
+    });
+  };
+
+  const enterCityClick = () => {
+    data.cityList.all.forEach((item) => {
+      const city = item.toLowerCase(),
+        lvalue = value.toLowerCase();
+      if (city === lvalue) {
+        setActiveCity(item);
+        setValue("");
+        props.closeModal();
       }
     });
   };
@@ -93,7 +112,14 @@ const CityModal: FC<prop> = (props) => {
                 onChange={(event) => setValue(event.target.value)}
                 onKeyUp={searchCity}
               />
-              <button>Выбрать</button>
+              {dropList.length ? (
+                <DropDownCityList
+                  list={dropList}
+                  close={props.closeModal}
+                  setCity={setActiveCity}
+                />
+              ) : null}
+              <button onClick={enterCityClick}>Выбрать</button>
             </div>
           </div>
           <CityList closeModal={props.closeModal} />

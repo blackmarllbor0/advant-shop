@@ -1,7 +1,7 @@
 export interface PropsCard {
     id: string | number;
     title: string;
-    image: string[];
+    bigImage: string;
     category: string;
     article: string | number;
     color?: string[] | [];

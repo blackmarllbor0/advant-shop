@@ -1,3 +1,5 @@
+@import "./styles/variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -11,20 +13,75 @@
 
 .link {
   text-decoration: none;
-  color: #0070e0;
+  color: $link;
+  cursor: pointer;
 
   &:hover {
-    color: #4b4f58;
+    color: $link-hover;
     text-decoration: underline;
   }
 }
 
 .reverse-link {
   text-decoration: none;
-  color: #4b4f58;
+  color: $link-hover;
+  cursor: pointer;
 
   &:hover {
-    color: #0070e0;
+    color: $link;
     text-decoration: underline;
   }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  align-items: center;
+}
+
+.btn-dark {
+  background-color: $btn-dark;
+
+  &:hover {
+    background-color: $btn-dark-hover;
+  }
+}
+
+.btn-blue {
+  background-color: $btn-blue;
+
+  &:hover {
+    background-color: $btn-blue-hover;
+  }
+}
+
+.input {
+  border: $border;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.border {
+  border: $border;
+  padding: 0.5rem;
+  border: $border;
+  border-radius: $radius;
 }

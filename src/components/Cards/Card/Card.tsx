@@ -1,9 +1,10 @@
 import { FC, MouseEvent, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { PropsCard } from "../../interfaces/card";
+import { PropsCard } from "../../../interfaces/card";
 
-const Card: FC<PropsCard> = ({ image, title, price, color, revies, id }) => {
+
+const Card: FC<PropsCard> = ({ bigImage , title, price, color, revies, id }) => {
   const viewBlock = useRef<HTMLDivElement>(null);
 
   const hoverViews = (event: MouseEvent<HTMLDivElement>) => {
@@ -41,7 +42,7 @@ const Card: FC<PropsCard> = ({ image, title, price, color, revies, id }) => {
         </span>
       </div>
       <Link to={"/"}>
-        <img src={image[0]} alt={title} />
+        <img src={bigImage} alt={title} />
       </Link>
       <i className="fa-duotone fa-briefcase"></i>
       <div className="description">

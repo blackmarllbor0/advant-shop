@@ -1,17 +1,32 @@
-import React from "react";
-import Cards from "../Cards/Cards";
+import React, { useState } from "react";
+import Cards from "../../components/Cards/Cards";
 import data from "../../DATA.json";
 
 import "./MainPage.scss";
 import { Link } from "react-router-dom";
+import ScrollUp from "../../components/ScrollUp/ScrollUp";
+import StartModal from "../../components/startModal/startModal";
 
 const MainPage = () => {
+  const [scroll, setScroll] = useState<boolean>(false)
+  document.addEventListener('scroll', () => {
+    if (window.pageYOffset >= 800) {
+      setScroll(true);
+    } else if (window.pageYOffset < 800) {
+      setScroll(false);
+    }
+  })
+  
   return (
     <div className="main_product">
+      <StartModal />
+      
       <Cards data={data.covers} category={data.caregory[0]} />
       <Cards data={data.watch} category={data.caregory[1]} />
       <Cards data={data.Headphones} category={data.caregory[2]} />
       <Cards data={data.Columns} category={data.caregory[3]} />
+      <Cards data={data.Akamulator} category={data.caregory[4]} />
+      <Cards data={data.Smartfon} category={data.caregory[5]} />
 
       <div className="container news-fol">
         <span>Подписа на новости</span>
@@ -57,6 +72,7 @@ const MainPage = () => {
           <div>Подарочные сертификаты</div>
         </div>
       </div>
+      {scroll ? <ScrollUp /> : null}
     </div>
   );
 };

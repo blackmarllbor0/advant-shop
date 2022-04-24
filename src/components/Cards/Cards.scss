@@ -1,121 +1,12 @@
-.covers {
+.col {
+  gap: 3.5rem !important;
   padding-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.5rem;
-  width: min-content;
-  cursor: pointer;
-
-  .link {
-    a {
-      font-weight: 500;
-    }
-  }
-
-  a {
-    color: #0662c1;
-    text-decoration: none;
-    &:hover {
-      color: #4b4f58;
-      text-decoration: underline;
-    }
-  }
-
-  i {
-    color: #0662c1;
-    cursor: pointer;
-  }
-
-  .product {
-    display: flex;
-
-    a {
-      font-size: 0.75rem;
-    }
-  }
-  
-  .cover {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    justify-content: space-between;
-
-    .description {
-      text-align: center;
-    }
-
-    .revies {
-      width: max-content;
-      margin: 10px auto;
-      // i {
-      //   color: #d1d1d1;
-      // }
-      // .star {
-      //   color: #fec419;
-      // }
-    }
-
-    .color_border {
-      // margin: 10px auto;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #f8b643;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .color {
-        width: 20px;
-        height: 20px;
-        background-color: black;
-      }
-    }
-  }
-
-
-  .add_to_basket {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-
-    span {
-      font-size: 1rem;
-    }
-    
-    p {
-      font-size: 0.8rem;
-    }
-
-    .button {
-			background-color: #0063c7;
-			padding: .3rem .5rem;
-      border-radius: .3rem;
-      cursor: pointer;
-
-      &:hover {
-        background-color: #0070e0;
-      }
-
-      i {
-        color: white;
-        margin-right: 5px;
-        font-size: .8rem;
-      }
-
-      span {
-        font-size: .8rem;
-        color: white;
-      }
-    }
-  }
 
   .quick_views {
     position: absolute;
     background-color: #cc0000;
     color: white;
-    font-size: .6rem;
+    font-size: 0.6rem;
     width: max-content;
     padding: 2px 7px;
     border-radius: 5px;
@@ -138,11 +29,94 @@
     }
   }
 
+  .link {
+    font-size: 22px;
+  }
+
+  a {
+    color: #0662c1;
+    text-decoration: none;
+    &:hover {
+      color: #4b4f58;
+      text-decoration: underline;
+    }
+  }
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+
+    .description {
+      text-align: center;
+    }
+
+    .revies {
+      width: max-content;
+      margin: 10px auto;
+    }
+
+    .color_border {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #f8b643;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .color {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+      }
+    }
+  }
+
+  .add_to_basket {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    span {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .button {
+      background-color: #0063c7;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0070e0;
+      }
+
+      i {
+        color: white;
+        margin-right: 5px;
+        font-size: 0.8rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: white;
+      }
+    }
+  }
+
+  
+
   .colors {
     display: flex;
     gap: 10px;
     width: max-content;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 .revies {

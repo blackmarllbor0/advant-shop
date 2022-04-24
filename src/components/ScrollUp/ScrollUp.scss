@@ -1,0 +1,23 @@
+.scroll-up {
+  width: 40px;
+  background-color: #f4f4f4;
+  position: fixed;
+  left: 0;
+  height: 100vw;
+  top: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  i {
+    font-size: 2rem;
+    color: gray;
+    margin: 400px 7px;
+
+    &:hover {
+      color: rgb(96, 96, 96);
+    }
+  }
+}
