@@ -48,9 +48,7 @@ const CityModal: FC<prop> = (props) => {
 
   const closeModalClick = (): void => props.closeModal();
 
-  const searchCity = (
-    event: KeyboardEvent<HTMLInputElement> & MouseEvent<HTMLButtonElement>
-  ) => {
+  const searchCity = (event: KeyboardEvent<HTMLInputElement>) => {
     let list: string[] = [];
     data.cityList.all.forEach((item) => {
       const city = item.toLowerCase(),

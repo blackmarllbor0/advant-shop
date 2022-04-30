@@ -28,6 +28,7 @@
       background-color: #fff;
       font-size: 0.75rem;
       cursor: pointer;
+      z-index: 15;  
 
       &:hover {
         color: $link;

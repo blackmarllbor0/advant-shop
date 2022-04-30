@@ -1,18 +1,7 @@
-export interface PropsCard {
-    id: string | number;
-    title: string;
-    bigImage: string;
-    category: string;
-    article: string | number;
-    color?: string[] | [];
-    price: string | number;
-    comments: Comment[];
-    revies: number;
-    availability: boolean;
-}
+import { seacrList } from "./searchList";
 
 export interface PropsCards {
-    data: PropsCard[];
+    data: seacrList[];
     category: string;
 }
 

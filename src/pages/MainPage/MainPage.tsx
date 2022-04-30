@@ -8,25 +8,28 @@ import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import StartModal from "../../components/startModal/startModal";
 
 const MainPage = () => {
-  const [scroll, setScroll] = useState<boolean>(false)
-  document.addEventListener('scroll', () => {
+  const [scroll, setScroll] = useState<boolean>(false);
+  
+  document.addEventListener("scroll", () => {
     if (window.pageYOffset >= 800) {
       setScroll(true);
     } else if (window.pageYOffset < 800) {
       setScroll(false);
     }
-  })
-  
+  });
+
   return (
     <div className="main_product">
       <StartModal />
-      
-      <Cards data={data.covers} category={data.caregory[0]} />
-      <Cards data={data.watch} category={data.caregory[1]} />
-      <Cards data={data.Headphones} category={data.caregory[2]} />
-      <Cards data={data.Columns} category={data.caregory[3]} />
-      <Cards data={data.Akamulator} category={data.caregory[4]} />
-      <Cards data={data.Smartfon} category={data.caregory[5]} />
+
+      <Cards data={data.covers.slice(0, 4)} category={data.caregory[0]} />
+      <Cards data={data.watch.slice(0, 4)} category={data.caregory[1]} />
+      <Cards data={data.Headphones.slice(0, 4)} category={data.caregory[2]} />
+      <Cards data={data.Columns.slice(0, 4)} category={data.caregory[3]} />
+      <Cards data={data.Akamulator.slice(0, 4)} category={data.caregory[4]} />
+      <Cards data={data.Smartfon.slice(0, 4)} category={data.caregory[5]} />
+
+      <hr className="container" />
 
       <div className="container news-fol">
         <span>Подписа на новости</span>

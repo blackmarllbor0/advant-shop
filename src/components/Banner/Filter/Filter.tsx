@@ -1,11 +1,36 @@
-import { MouseEvent, useRef } from "react";
+import { MouseEvent, useRef, useState, KeyboardEvent } from "react";
 import "./Filter.scss";
 
 import data from "../../../DATA.json";
 import { Link } from "react-router-dom";
+import { seacrList } from "../../../interfaces/searchList";
+import DropList from "./DropList/DropList";
 
 const Filter = () => {
   const viewBlock = useRef<HTMLDivElement>(null);
+  const [value, setValue] = useState<string>("");
+  const [dropList, setDropList] = useState<seacrList[]>([]);
+
+  const keys: string[] = [
+    "covers",
+    "watch",
+    "Headphones",
+    "Columns",
+    "Akamulator",
+    "Smartfon",
+  ];
+
+  const list = keys
+    .map((key) => Object.entries(data).filter(([item]) => item === key)[0][1])
+    .flat() as seacrList[];
+
+  const search = () => {
+    const res = list.filter(
+      ({ title }) =>
+        title.toLowerCase().includes(value.toLowerCase()) && value.length > 2
+    );
+    setDropList(res);
+  };
 
   const hoverViews = (event: MouseEvent<HTMLDivElement>) => {
     if (event.type === "mouseover") {
@@ -35,7 +60,15 @@ const Filter = () => {
       </div>
       <div>
         <div className="row">
-          <input type="search" placeholder="Поиск" className="input" />
+          <input
+            type="search"
+            placeholder="Поиск"
+            className="input"
+            value={value}
+            onChange={(event) => setValue(event.target.value)}
+            onKeyUp={search}
+          />
+          {dropList.length & value.length ? <DropList list={dropList} /> : null}
           <button className="btn btn-blue row">Найти</button>
         </div>
       </div>
