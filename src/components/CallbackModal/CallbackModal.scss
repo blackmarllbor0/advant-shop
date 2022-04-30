@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.callback {
+  width: 470px;
+  height: max-content;
+  position: fixed;
+  background-color: #fff;
+  z-index: 21;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  color: $btn-dark;
+
+  .sub {
+    padding: 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 15px 15px 0px;
+  }
+
+  .info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      font-size: 13px;
+    }
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        color: #ff0000;
+        margin-right: 50px;
+      }
+
+      input {
+        height: 35px;
+        padding: 0.03rem 0.5rem !important;
+        width: 300px;
+      }
+    }
+  }
+
+  .down {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border: $border;
+    border-color: #afafaf;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+.dark {
+  left: 0%;
+  z-index: 20 !important;
+}
+
+.closeBtn {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 25;
+  position: fixed;
+  top: 100px;
+  left: 62.8vw;
+  cursor: pointer;
+}

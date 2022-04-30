@@ -11,7 +11,7 @@
   top: 20%;
   padding: 10px;
   height: max-content;
-  z-index: 11;
+  z-index: 31;
   border-radius: 8px;
   box-shadow: 0px 2px 8px 5px rgba(34, 60, 80, 0.2);
 
@@ -96,7 +96,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba($color: #000000, $alpha: 0.5);
-  z-index: 10;
+  z-index: 30;
   top: 0%;
 }
 
@@ -137,7 +137,7 @@
   width: 288px;
   height: max-content;
   gap: 0 !important;
-  z-index: 13;
+  z-index: 33;
   display: flex;
   flex-direction: column;
   background-color: #fff;

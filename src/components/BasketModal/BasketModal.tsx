@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, MouseEvent } from "react";
 import { Link } from "react-router-dom";
+import { useAction } from "../../hooks/useAction";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import "./BasketModal.scss";
 
@@ -8,33 +9,34 @@ const BasketModal = () => {
   const result = useRef<HTMLDivElement>(null);
 
   const { show, items } = userTypeSelector((state) => state.basket);
+  const { showBasketPanel } = useAction();
+
+  const newItems = Array.from(new Set(items));
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (window.pageYOffset >= 50) {
         modal.current!.style.top = "0px";
-        result.current!.style.top = items.length === 1 ? "135px" : "240px";
+        result.current!.style.top = newItems.length === 1 ? "135px" : "240px";
       } else if (window.pageYOffset <= 50) {
         modal.current!.style.top = "60px";
-        result.current!.style.top = items.length === 1 ? "195px" : "295px";
+        result.current!.style.top = newItems.length === 1 ? "195px" : "295px";
       }
     });
   });
-
-  
 
   return (
     <div
       className="modal_basket"
       style={{
         display: show && items.length ? "flex" : "none",
-        overflowY: items.length >= 3 ? "scroll" : "auto",
-        height: items.length === 1 ? "max-content" : "240px",
+        overflowY: newItems.length >= 3 ? "scroll" : "auto",
+        height: newItems.length === 1 ? "max-content" : "240px",
       }}
       ref={modal}
     >
       <div className="margin" />
-      {items.map(({ bigImage, title, price }, i) => {
+      {newItems.map(({ bigImage, title, price }, i) => {
         return (
           <div className="product row" key={i}>
             <Link to={"/"}>
@@ -44,8 +46,10 @@ const BasketModal = () => {
               <Link to={"/"} className="link">
                 {title}
               </Link>
-              <span>Количество: 1</span>
-              <span>Цена: {price} руб</span>
+              <span>{`Количество: ${
+                items.filter((item) => item.title === title).length
+              }`}</span>
+              <span>Цена: {price} руб.</span>
             </div>
           </div>
         );
@@ -54,7 +58,7 @@ const BasketModal = () => {
         ref={result}
         className="result"
         style={{
-          top: items.length === 1 ? "195px" : "295px",
+          top: newItems.length === 1 ? "195px" : "295px",
         }}
       >
         <span>

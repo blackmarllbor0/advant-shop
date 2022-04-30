@@ -8,10 +8,17 @@ import "./Banner.scss";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import BasketModal from "../BasketModal/BasketModal";
 import { useAction } from "../../hooks/useAction";
+import CallbackModal from "../CallbackModal/CallbackModal";
+import { useState } from "react";
 
 const Banner = () => {
-  const { items } = userTypeSelector((state) => state.basket);
+  const [showCallback, setCallback] = useState(false);
+  const { items, show } = userTypeSelector((state) => state.basket);
   const { showBasketPanel } = useAction();
+
+  showCallback
+    ? (document.querySelector("body")!.style.overflow = "hidden")
+    : (document.querySelector("body")!.style.overflow = "auto");
 
   return (
     <div className="banner border">
@@ -54,7 +61,7 @@ const Banner = () => {
           <div
             className="border row"
             onClick={() => {
-              showBasketPanel(true);
+              showBasketPanel(show ? false : true);
               setTimeout(() => {
                 showBasketPanel(false);
               }, 10000);
@@ -73,9 +80,12 @@ const Banner = () => {
             <Link className="link" to={"/"}>
               Отправить сообщение
             </Link>
-            <Link className="link" to={"/"}>
-              Обратный звоно
-            </Link>
+            <span className="link" onClick={() => setCallback(true)}>
+              Обратный звонок
+            </span>
+            {showCallback ? (
+              <CallbackModal show={(bool) => setCallback(bool)} />
+            ) : null}
           </div>
         </div>
       </div>
