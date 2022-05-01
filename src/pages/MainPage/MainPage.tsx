@@ -9,7 +9,7 @@ import StartModal from "../../components/startModal/startModal";
 
 const MainPage = () => {
   const [scroll, setScroll] = useState<boolean>(false);
-  
+
   document.addEventListener("scroll", () => {
     if (window.pageYOffset >= 800) {
       setScroll(true);

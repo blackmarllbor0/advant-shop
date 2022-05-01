@@ -4,18 +4,25 @@
     "thumbnail": "https://simple.advant.design/pictures/logo_20150929170239.png"
   },
   "caregory": [
-    "Чехлы",
-    "Смарт-часы",
-    "Наушники",
-    "Колонки портативные",
-    "Акамуляторы",
-    "Смартфоны Samsung"
+    "covers",
+    "watch",
+    "Headphones",
+    "Columns",
+    "Akamulator",
+    "Smartfon"
   ],
   "covers": [
     {
       "id": "1",
       "title": "Samsung Clear View Standing Cover EF-ZG955CBEGRU Чехол для Samsung Galaxy S8+",
       "bigImage": "https://simple.advant.design/pictures/product/small/4587_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4587_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4588_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4589_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4590_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4591_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1678",
       "color": ["black"],
@@ -34,6 +41,12 @@
       "id": "2",
       "title": "Samsung Clear View Standing Cover EF-ZN950CNEGRU Чехол для Samsung Galaxy Note 8",
       "bigImage": "https://simple.advant.design/pictures/product/small/4600_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4600_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4601_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4602_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4603_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1679",
       "color": [],
@@ -46,6 +59,13 @@
       "id": "3",
       "title": "Samsung Clear View Standing Cover EF-ZG950CFEGRU Чехол для Samsung Galaxy S8",
       "bigImage": "https://simple.advant.design/pictures/product/small/4604_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4604_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4605_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4607_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4606_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4608_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1680",
       "color": ["yellow"],
@@ -64,6 +84,13 @@
       "id": "4",
       "title": "Samsung Clear View Standing Cover EF-ZG955CFEGRU Чехол для Samsung Galaxy S8+",
       "bigImage": "https://simple.advant.design/pictures/product/small/4609_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4604_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4605_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4607_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4606_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4608_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1681",
       "color": ["yellow"],
@@ -76,6 +103,13 @@
       "id": "5",
       "title": "Samsung LED View Cover EF-NN950PFEGRU Чехол для Samsung Galaxy Note 8",
       "bigImage": "https://simple.advant.design/pictures/product/small/4619_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4614_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4615_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4616_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4618_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4617_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1683",
       "color": ["yellow"],
@@ -94,6 +128,12 @@
       "id": "6",
       "title": "Samsung Clear View Standing Cover EF-ZG955CVEGRU Чехол для Samsung Galaxy S8+",
       "bigImage": "https://simple.advant.design/pictures/product/small/4614_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4619_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4620_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4621_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4622_xsmall.jpg"
+      ],
       "category": "Чехлы",
       "article": "1682",
       "color": ["purple"],
@@ -108,6 +148,11 @@
       "id": "1",
       "title": "Часы-пульсометр Suunto Kailash ремешок - белый",
       "bigImage": "https://simple.advant.design/pictures/product/small/4496_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4496_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4498_xsmall.png",
+        "https://simple.advant.design/pictures/product/xsmall/4499_xsmall.png"
+      ],
       "category": " Смарт-часы",
       "article": "1654",
       "color": ["white"],
@@ -126,6 +171,10 @@
       "id": "2",
       "title": "Часы-пульсометр Suunto Kailash ремешок - коричневый",
       "bigImage": "https://simple.advant.design/pictures/product/small/4500_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4500_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4502_xsmall.png"
+      ],
       "category": " Смарт-часы",
       "article": "1655",
       "color": ["brown"],
@@ -138,6 +187,10 @@
       "id": "3",
       "title": "Часы-пульсометр Suunto Kailash ремешок - черный",
       "bigImage": "https://simple.advant.design/pictures/product/small/4503_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4503_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4506_xsmall.jpg"
+      ],
       "category": "Смарт-часы",
       "article": "1656",
       "color": ["yellow"],
@@ -156,6 +209,10 @@
       "id": "4",
       "title": "Часы-пульсометр Suunto Kailash ремешок - черный",
       "bigImage": "https://simple.advant.design/pictures/product/small/4507_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4507_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4508_xsmall.png"
+      ],
       "category": "Смарт-часы",
       "article": "1657",
       "color": ["black"],
@@ -168,6 +225,10 @@
       "id": "5",
       "title": "Спортивные часы Garmin fenix 5x Sapphire Slate Gray ремешок - черный",
       "bigImage": "https://simple.advant.design/pictures/product/small/4509_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4509_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4510_xsmall.jpg"
+      ],
       "category": " Смарт-часы",
       "article": "1654",
       "color": ["black"],
@@ -186,6 +247,11 @@
       "id": "6",
       "title": "Спортивные часы Garmin Fenix Cronos ремешок - серебристый",
       "bigImage": "https://simple.advant.design/pictures/product/small/4492_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4492_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4494_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4495_xsmall.jpg"
+      ],
       "category": " Смарт-часы",
       "article": "1653",
       "color": ["gray"],
@@ -200,6 +266,11 @@
       "id": "1",
       "title": "Sennheiser Urbanite XL Black (506085) Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4566_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4566_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4567_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4568_xsmall.jpg"
+      ],
       "category": "Наушники ",
       "article": "1672",
       "color": [],
@@ -218,6 +289,10 @@
       "id": "2",
       "title": "Sennheiser Momentum M2 AEI Black 506384 Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4569_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4569_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4574_xsmall.jpg"
+      ],
       "category": "Наушники",
       "article": "1673",
       "color": ["brown", "black"],
@@ -230,6 +305,10 @@
       "id": "3",
       "title": "Sennheiser URBANITE SAND Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4575_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4575_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4576_xsmall.jpg"
+      ],
       "category": "Наушники ",
       "article": "1674",
       "color": [],
@@ -248,6 +327,10 @@
       "id": "4",
       "title": "Sennheiser URBANITE NATION Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4577_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4577_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4577_xsmall.jpg"
+      ],
       "category": "Наушники",
       "article": "1675",
       "color": [],
@@ -260,6 +343,13 @@
       "id": "5",
       "title": "Sennheiser HD 4.20S Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4579_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4579_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4580_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4581_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4582_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4583_xsmall.jpg"
+      ],
       "category": "Наушники ",
       "article": "1676",
       "color": [],
@@ -278,6 +368,11 @@
       "id": "6",
       "title": "Sennheiser Momentum M2 AEI Black 506384 Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4569_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4584_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4586_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4585_xsmall.jpg"
+      ],
       "category": "Наушники",
       "article": "1673",
       "color": ["brown", "black"],
@@ -292,6 +387,11 @@
       "id": "1",
       "title": "JBL Charge 3 Black Колонка портативная",
       "bigImage": "https://simple.advant.design/pictures/product/small/4630_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4630_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4631_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4632_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1686",
       "color": ["black"],
@@ -310,6 +410,11 @@
       "id": "2",
       "title": "JBL Charge 3 Red Колонка портативная",
       "bigImage": "https://simple.advant.design/pictures/product/small/4634_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4634_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4633_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4635_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1673",
       "color": ["red"],
@@ -322,6 +427,12 @@
       "id": "3",
       "title": "Sennheiser URBANITE SAND Наушники с микрофоном",
       "bigImage": "https://simple.advant.design/pictures/product/small/4636_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4636_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4637_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4638_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4639_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1688",
       "color": ["rgb(0, 128, 128)"],
@@ -340,6 +451,12 @@
       "id": "4",
       "title": "JBL Xtreme Black Колонка портативная",
       "bigImage": "https://simple.advant.design/pictures/product/small/4623_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4623_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4624_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4625_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4626_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1684",
       "color": ["black"],
@@ -352,6 +469,11 @@
       "id": "5",
       "title": "JBL Xtreme Squad Колонка портативная",
       "bigImage": "https://simple.advant.design/pictures/product/small/4627_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4627_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4628_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4629_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1685",
       "color": ["green"],
@@ -370,6 +492,10 @@
       "id": "6",
       "title": "JBL Charge 3 Zap Колонка портативная",
       "bigImage": "https://simple.advant.design/pictures/product/small/4640_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4640_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4641_xsmall.jpg"
+      ],
       "category": "Колонки портативные",
       "article": "1689",
       "color": [],
@@ -384,6 +510,12 @@
       "id": "1",
       "title": "Samsung EB-PN920USRGRU Silver Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4545_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4546_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4547_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4548_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4545_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1666",
       "color": [],
@@ -402,6 +534,12 @@
       "id": "2",
       "title": "Samsung EB-P3000BSRGRU Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4549_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4549_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4552_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4550_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4551_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1667",
       "color": [],
@@ -414,6 +552,11 @@
       "id": "3",
       "title": "Samsung EB-P3000BNRGRU Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4553_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4553_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4554_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4555_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1668",
       "color": [],
@@ -432,6 +575,11 @@
       "id": "4",
       "title": "Samsung EB-P3020BNRGRU Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4556_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4556_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4557_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4558_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1684",
       "color": [],
@@ -444,6 +592,11 @@
       "id": "5",
       "title": "Samsung EB-PN920USRGRU Silver Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4559_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4559_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4561_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4560_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1670",
       "color": [],
@@ -462,6 +615,12 @@
       "id": "6",
       "title": "Samsung EB-PG935 silver Аккумулятор внешний",
       "bigImage": "https://simple.advant.design/pictures/product/small/4562_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4562_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4563_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4564_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4565_xsmall.jpg"
+      ],
       "category": "Аккумуляторы",
       "article": "1671",
       "color": [],
@@ -476,6 +635,11 @@
       "id": "1",
       "title": "Samsung Galaxy S8+ 4G 128Gb Black Brilliant Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4519_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4519_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4523_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4524_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1660",
       "color": [],
@@ -494,6 +658,12 @@
       "id": "2",
       "title": "Samsung Galaxy S8+ 4G 64Gb Violet Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4600_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4527_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4528_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4526_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4525_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1661",
       "color": [],
@@ -506,6 +676,12 @@
       "id": "3",
       "title": "Samsung Galaxy S8 4G 64Gb Gold Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4529_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4532_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4530_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4529_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4531_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1662",
       "color": [],
@@ -524,6 +700,12 @@
       "id": "4",
       "title": "Samsung Galaxy A8+ 4G 32Gb Blue Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4535_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4533_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4535_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4536_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4537_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1663",
       "color": [],
@@ -536,6 +718,10 @@
       "id": "5",
       "title": "Samsung Galaxy A8+ 4G 32Gb Gold Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4539_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4539_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4540_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1664",
       "color": [],
@@ -554,6 +740,12 @@
       "id": "6",
       "title": "Samsung Galaxy S8+ 4G 128Gb Black Brilliant Смартфон",
       "bigImage": "https://simple.advant.design/pictures/product/small/4543_small.jpg",
+      "smallImages": [
+        "https://simple.advant.design/pictures/product/xsmall/4542_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4543_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4541_xsmall.jpg",
+        "https://simple.advant.design/pictures/product/xsmall/4544_xsmall.jpg"
+      ],
       "category": "Смартфоны Samsung",
       "article": "1665",
       "color": [],

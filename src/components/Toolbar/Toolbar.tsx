@@ -38,10 +38,6 @@ const Toolbar = () => {
             {" "}
             Регистрация{" "}
           </Link>
-          <Link className="toolbar-link" to={"/"}>
-            {" "}
-            Администрирование{" "}
-          </Link>
         </div>
       </div>
     </div>

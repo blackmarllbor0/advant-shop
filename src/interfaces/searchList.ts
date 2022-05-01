@@ -1,4 +1,4 @@
-export interface seacrList {
+  export interface seacrList {
   article: string | number;
   availability: boolean;
   bigImage: string;

@@ -4,6 +4,7 @@ const initialState: CityState = {
   country: "Россия",
   cities: [],
   activeCity: "Москва",
+  loading: "loading",
 };
 
 export const cityReducer = (
@@ -25,6 +26,11 @@ export const cityReducer = (
       return {
         ...state,
         activeCity: action.payload,
+      };
+    case CityActionType.SET_LOADING_STATUS:
+      return {
+        ...state,
+        loading: action.payload,
       };
     default:
       return state;

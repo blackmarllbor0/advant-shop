@@ -19,10 +19,10 @@ const CallbackModal: FC<prop> = ({ show }) => {
 
   document.addEventListener("keydown", (event): void => {
     if (event.key === "Escape") show(false);
-    if (event.key === "Enter") {
+    if (submit) {
       setTimeout(() => {
-        if (submit) show(false);
-      }, 1000);
+        if (event.key === "Enter") show(false);
+      }, 2000);
     }
   });
 
