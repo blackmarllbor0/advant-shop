@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Cards from "../../components/Cards/Cards";
 import data from "../../DATA.json";
 
@@ -6,9 +6,29 @@ import "./MainPage.scss";
 import { Link } from "react-router-dom";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import StartModal from "../../components/startModal/startModal";
+import { seacrList } from "../../interfaces/searchList";
+import { useAction } from "../../hooks/useAction";
+import { userTypeSelector } from "../../hooks/useTypeSelector";
 
 const MainPage = () => {
   const [scroll, setScroll] = useState<boolean>(false);
+  const { setProdcutList } = useAction();
+  const { productList } = userTypeSelector((state) => state.product);
+
+  useEffect(() => {
+    const res = Array.from(
+      data.caregory
+        .map(
+          (cat) =>
+            Object.entries(data).filter(
+              ([item]) => item === cat
+            )[0][1] as seacrList[]
+        )
+        .flat()
+    );
+
+    setProdcutList(res);
+  }, []);
 
   document.addEventListener("scroll", () => {
     if (window.pageYOffset >= 800) {
@@ -18,16 +38,21 @@ const MainPage = () => {
     }
   });
 
+  const filterData = (index: number) => {
+    return productList
+      .filter((item) => item.category === data.translateCategory[index])
+      .slice(0, 4);
+  };
+
   return (
     <div className="main_product">
       <StartModal />
 
-      <Cards data={data.covers.slice(0, 4)} category={data.caregory[0]} />
-      <Cards data={data.watch.slice(0, 4)} category={data.caregory[1]} />
-      <Cards data={data.Headphones.slice(0, 4)} category={data.caregory[2]} />
-      <Cards data={data.Columns.slice(0, 4)} category={data.caregory[3]} />
-      <Cards data={data.Akamulator.slice(0, 4)} category={data.caregory[4]} />
-      <Cards data={data.Smartfon.slice(0, 4)} category={data.caregory[5]} />
+      {productList.length ? (
+        data.caregory.map((item, i) => <Cards key={i} data={filterData(i)} />)
+      ) : (
+        <h1>Loading...</h1>
+      )}
 
       <hr className="container" />
 

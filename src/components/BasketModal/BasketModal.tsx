@@ -1,6 +1,5 @@
-import { useEffect, useRef, MouseEvent } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { useAction } from "../../hooks/useAction";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import "./BasketModal.scss";
 
@@ -9,7 +8,6 @@ const BasketModal = () => {
   const result = useRef<HTMLDivElement>(null);
 
   const { show, items } = userTypeSelector((state) => state.basket);
-  const { showBasketPanel } = useAction();
 
   const newItems = Array.from(new Set(items));
 

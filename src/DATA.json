@@ -11,6 +11,14 @@
     "Akamulator",
     "Smartfon"
   ],
+  "translateCategory": [
+    "Чехлы",
+    "Смарт-часы",
+    "Наушники",
+    "Колонки портативные",
+    "Аккумуляторы",
+    "Смартфоны Samsung"
+  ],
   "covers": [
     {
       "id": "1",
@@ -153,7 +161,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4498_xsmall.png",
         "https://simple.advant.design/pictures/product/xsmall/4499_xsmall.png"
       ],
-      "category": " Смарт-часы",
+      "category": "Смарт-часы",
       "article": "1654",
       "color": ["white"],
       "price": "68999",
@@ -175,7 +183,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4500_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4502_xsmall.png"
       ],
-      "category": " Смарт-часы",
+      "category": "Смарт-часы",
       "article": "1655",
       "color": ["brown"],
       "price": "8999",
@@ -229,7 +237,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4509_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4510_xsmall.jpg"
       ],
-      "category": " Смарт-часы",
+      "category": "Смарт-часы",
       "article": "1654",
       "color": ["black"],
       "price": "68499",
@@ -252,7 +260,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4494_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4495_xsmall.jpg"
       ],
-      "category": " Смарт-часы",
+      "category": "Смарт-часы",
       "article": "1653",
       "color": ["gray"],
       "price": "97499",
@@ -271,7 +279,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4567_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4568_xsmall.jpg"
       ],
-      "category": "Наушники ",
+      "category": "Наушники",
       "article": "1672",
       "color": [],
       "price": "16599",
@@ -309,7 +317,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4575_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4576_xsmall.jpg"
       ],
-      "category": "Наушники ",
+      "category": "Наушники",
       "article": "1674",
       "color": [],
       "price": "12899",
@@ -350,7 +358,7 @@
         "https://simple.advant.design/pictures/product/xsmall/4582_xsmall.jpg",
         "https://simple.advant.design/pictures/product/xsmall/4583_xsmall.jpg"
       ],
-      "category": "Наушники ",
+      "category": "Наушники",
       "article": "1676",
       "color": [],
       "price": "16599",

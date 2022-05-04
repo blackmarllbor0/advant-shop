@@ -21,7 +21,7 @@ export const ProductReducer = (
     case ProductActionType.GET_PRODUCT_LIST:
       return {
         ...state,
-        productList: [...state.productList, ...action.payload],
+        productList: action.payload,
       };
     default:
       return state;

@@ -1,4 +1,4 @@
-import { MouseEvent, useRef, useState, KeyboardEvent } from "react";
+import { MouseEvent, useRef, useState } from "react";
 import "./Filter.scss";
 
 import data from "../../../DATA.json";
