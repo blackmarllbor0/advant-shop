@@ -7,6 +7,7 @@ import {
   MouseEvent,
 } from "react";
 import { Link } from "react-router-dom";
+import { useAction } from "../../hooks/useAction";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import { seacrList } from "../../interfaces/searchList";
 import ImagesList from "./ImagesList/ImagesList";
@@ -25,6 +26,7 @@ const QuickView: FC<prop> = (props) => {
   const [quantity, setQuantity] = useState<number>(1);
   const { productList } = userTypeSelector((state) => state.product);
   const [activeImage, setActiveImage] = useState<string>(smallImages[0]);
+  const { setBasketItems } = useAction();
 
   const incrementQuantity = () => {
     if (quantity >= 10) return;
@@ -74,6 +76,12 @@ const QuickView: FC<prop> = (props) => {
     if (index! !== 0) {
       props.setQuickContent(res[index! - 1]);
       setActiveImage(res[index! - 1].smallImages[0]);
+    }
+  };
+
+  const addToBasket = () => {
+    for (let i = 0; i < quantity; i++) {
+      setBasketItems(props.props);
     }
   };
 
@@ -138,7 +146,9 @@ const QuickView: FC<prop> = (props) => {
               <h2>{price} руб.</h2>
               <span>+120 руб. на бонусную карту</span>
             </div>
-            <button className="btn">Добавить</button>
+            <button className="btn" onClick={addToBasket}>
+              Добавить
+            </button>
           </div>
           <hr />
         </div>
