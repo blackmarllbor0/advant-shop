@@ -51,7 +51,7 @@ const Filter = () => {
         <span>Каталог товаров</span>
         <i className="fa-solid fa-angle-down mb-10" />
         <div className="categories" ref={viewBlock}>
-          {data.caregory.map((item, i) => (
+          {data.translateCategory.map((item, i) => (
             <Link key={i} className="link" to={"/"}>
               {item}
             </Link>

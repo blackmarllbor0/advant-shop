@@ -1,7 +1,15 @@
-import { ChangeEvent, FC, useEffect, useState } from "react";
+import {
+  ChangeEvent,
+  FC,
+  useEffect,
+  useRef,
+  useState,
+  MouseEvent,
+} from "react";
 import { Link } from "react-router-dom";
 import { userTypeSelector } from "../../hooks/useTypeSelector";
 import { seacrList } from "../../interfaces/searchList";
+import ImagesList from "./ImagesList/ImagesList";
 import "./QuickView.scss";
 
 type prop = {
@@ -12,10 +20,12 @@ type prop = {
 };
 
 const QuickView: FC<prop> = (props) => {
-  const { title, bigImage, article, price, color, id, category } = props.props;
+  const { title, article, price, color, id, category, smallImages } =
+    props.props;
   const [quantity, setQuantity] = useState<number>(1);
   const { productList } = userTypeSelector((state) => state.product);
-  
+  const [activeImage, setActiveImage] = useState<string>(smallImages[0]);
+
   const incrementQuantity = () => {
     if (quantity >= 10) return;
     setQuantity((quantity) => quantity + 1);
@@ -47,6 +57,7 @@ const QuickView: FC<prop> = (props) => {
 
     if (index! !== 3) {
       props.setQuickContent(res[index! + 1]);
+      setActiveImage(res[index! + 1].smallImages[0]);
     }
   };
 
@@ -62,6 +73,7 @@ const QuickView: FC<prop> = (props) => {
 
     if (index! !== 0) {
       props.setQuickContent(res[index! - 1]);
+      setActiveImage(res[index! - 1].smallImages[0]);
     }
   };
 
@@ -69,25 +81,12 @@ const QuickView: FC<prop> = (props) => {
     <>
       <div className="dark" onClick={props.close} />
       <div className="quick_view">
-        <div className="images">
-          <img className="big" src={bigImage} alt={title} />
-          <div className="images-list">
-            <div className="border-image">
-              <img
-                className="small"
-                src="https://simple.advant.design/pictures/product/middle/4587_middle.jpg"
-                alt=""
-              />
-            </div>
-            <div className="border-image">
-              <img
-                className="small"
-                src="https://simple.advant.design/pictures/product/middle/4587_middle.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        <ImagesList
+          imageList={smallImages}
+          title={title}
+          activeImage={activeImage}
+          setActiveImage={setActiveImage}
+        />
         <div className="product-content">
           <Link to={"/"} className="link">
             {title}

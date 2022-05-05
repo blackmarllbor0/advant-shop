@@ -1,4 +1,4 @@
-  export interface seacrList {
+export interface seacrList {
   article: string | number;
   availability: boolean;
   bigImage: string;
@@ -9,4 +9,5 @@
   price: string | number;
   revies: number;
   title: string;
+  smallImages: string[];
 }

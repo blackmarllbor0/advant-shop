@@ -14,6 +14,16 @@ const Card: FC<seacrList> = (props) => {
   const [showQickView, setShowQickView] = useState<boolean>(false);
   const [quickView, setQuickView] = useState<seacrList>(props);
 
+  useEffect(() => {
+    showBasketPanel(false);
+  }, [items]);
+
+  if (showQickView) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
   const hoverViews = (event: MouseEvent<HTMLDivElement>) => {
     if (event.type === "mouseover") {
       viewBlock.current!.style.display = "block";
@@ -22,10 +32,6 @@ const Card: FC<seacrList> = (props) => {
       viewBlock.current!.style.display = "none";
     }
   };
-
-  useEffect(() => {
-    showBasketPanel(false);
-  }, [items]);
 
   let review = [];
   for (let i = 0; i < 5; i++) {
