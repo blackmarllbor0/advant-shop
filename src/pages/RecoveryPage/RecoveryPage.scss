@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.recovery-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 190px;
+
+  h1 {
+    margin-top: 15px;
+    font-weight: normal;
+  }
+
+  .path {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  .recovery {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+
+    span {
+      display: flex;
+      gap: 5px;
+      font-size: 17px;
+
+      p {
+        font-size: 16px;
+        color: #f00;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: -10px;
+
+      input {
+        height: 15px;
+        padding: 10px;
+      }
+
+      button {
+        display: flex;
+        padding: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+#p {
+  width: 450px;
+  height: max-content;
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  line-height: 22px;
+  color: lighten($color: #000000, $amount: 50);
+}
+
+.submit-recovery-message {
+  position: fixed;
+  right: 15px;
+  top: 40px;
+  background-color: #72d14c;
+  padding: 15px;
+  z-index: 40;
+  animation: show .5s linear;
+
+  span {
+    color: #fff;
+    border-radius: $radius;
+  }
+}
+
+@keyframes show {
+  from {
+    top: -100px;
+  } to {
+    top: 40px;
+  }
+}

@@ -21,12 +21,25 @@ type prop = {
 };
 
 const QuickView: FC<prop> = (props) => {
-  const { title, article, price, color, id, category, smallImages } =
-    props.props;
+  const {
+    title,
+    article,
+    price,
+    color,
+    id,
+    category,
+    smallImages,
+    availability,
+  } = props.props;
   const [quantity, setQuantity] = useState<number>(1);
   const { productList } = userTypeSelector((state) => state.product);
   const [activeImage, setActiveImage] = useState<string>(smallImages[0]);
   const { setBasketItems } = useAction();
+
+  useEffect(() => {
+    if (quantity > 10) setQuantity(10);
+    if (quantity <= 0) setQuantity(1);
+  }, [quantity]);
 
   const incrementQuantity = () => {
     if (quantity >= 10) return;
@@ -40,7 +53,6 @@ const QuickView: FC<prop> = (props) => {
 
   const changeInput = (event: ChangeEvent<HTMLInputElement>) => {
     setQuantity(+event.target.value);
-    if (quantity <= 0) setQuantity(1);
   };
 
   document.addEventListener("keydown", (event) => {
@@ -83,6 +95,7 @@ const QuickView: FC<prop> = (props) => {
     for (let i = 0; i < quantity; i++) {
       setBasketItems(props.props);
     }
+    setQuantity(1);
   };
 
   return (
@@ -101,7 +114,14 @@ const QuickView: FC<prop> = (props) => {
           </Link>
           <span className="artcl">Артикул {article}</span>
           <div className="product-review">
-            <span className="availability">Есть в наличии</span>
+            <span
+              className="availability"
+              style={{
+                background: availability ? "#b1cd03" : "red",
+              }}
+            >
+              {availability ? "Есть в наличии" : "Нету в наличчи"}
+            </span>
             <div className="stars">{props.review}</div>
           </div>
           <div className="quantity">

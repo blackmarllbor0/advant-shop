@@ -32,26 +32,22 @@ const Banner = () => {
           <ul className="row">
             <li>
               <Link to={"/"} className="reverse-link">
-                {" "}
-                О магазине{" "}
+                О магазине
               </Link>
             </li>
             <li>
               <Link to={"/"} className="reverse-link">
-                {" "}
-                Доставка и Оплата{" "}
+                Доставка и Оплата
               </Link>
             </li>
             <li>
               <Link to={"/"} className="reverse-link">
-                {" "}
-                Блог{" "}
+                Блог
               </Link>
             </li>
             <li>
               <Link to={"/"} className="reverse-link">
-                {" "}
-                Контакты{" "}
+                Контакты
               </Link>
             </li>
           </ul>
@@ -77,7 +73,7 @@ const Banner = () => {
           <BasketModal />
           <div className="number">+7 (495) 000-00-00</div>
           <div className="row">
-            <Link className="link" to={"/"}>
+            <Link className="link" to={"/send-message"}>
               Отправить сообщение
             </Link>
             <span className="link" onClick={() => setCallback(true)}>

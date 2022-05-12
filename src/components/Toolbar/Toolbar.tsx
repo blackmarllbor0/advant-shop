@@ -30,13 +30,11 @@ const Toolbar = () => {
           </span>
         </div>
         <div className="row">
-          <Link className="toolbar-link" to={"/"}>
-            {" "}
-            Войти{" "}
+          <Link className="toolbar-link" to={"/entrance"}>
+            Войти
           </Link>
-          <Link className="toolbar-link" to={"/"}>
-            {" "}
-            Регистрация{" "}
+          <Link className="toolbar-link" to={"/registration"}>
+            Регистрация
           </Link>
         </div>
       </div>

@@ -25,13 +25,13 @@ const InfoFooter = () => {
         </div>
         <div className="office">
           <span> Личный кабинет </span>
-          <Link to={"/"} className="reverse-link">
+          <Link to={"/entrance"} className="reverse-link">
             Вход
           </Link>
-          <Link to={"/"} className="reverse-link">
+          <Link to={"/registration"} className="reverse-link">
             Регистрация
           </Link>
-          <Link to={"/"} className="reverse-link">
+          <Link to={"/recovery"} className="reverse-link">
             Забыли пароль?
           </Link>
         </div>
@@ -39,9 +39,14 @@ const InfoFooter = () => {
           <span> Мы в соц сетях </span>
           <div>
             <i className="fa-brands fa-vk" />
-            <Link to={"/"} className="reverse-link">
+            <a
+              href="https://vk.com/blackmarllboro"
+              target={"_blank"}
+              className="reverse-link"
+              rel="noreferrer"
+            >
               ВКонтакте
-            </Link>
+            </a>
           </div>
         </div>
         <div className="bonus">

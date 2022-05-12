@@ -1,0 +1,17 @@
+.patch {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  a {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 10px;
+  }
+}
