@@ -1,4 +1,4 @@
-import { KeyboardEvent } from "react";
+import { KeyboardEvent, RefObject } from "react";
 
 export const useValidation = () => {
   const error: string = "#f00",
@@ -42,5 +42,25 @@ export const useValidation = () => {
     }
   };
 
-  return { changeInput, error, normal };
+  const nextInput = (
+    event: KeyboardEvent<HTMLInputElement>,
+    inputs: RefObject<HTMLInputElement[]>,
+    length: number
+  ) => {
+    if (event.code === "Enter") {
+      const index =
+        inputs!.current!.findIndex(
+          (item) => item.name === event.currentTarget.name
+        ) + 1;
+
+      if (
+        event.currentTarget.style.borderColor !== error &&
+        index !== length &&
+        event.currentTarget.value.length > 0
+      )
+        inputs!.current![index].focus();
+    }
+  };
+
+  return { changeInput, error, normal, nextInput };
 };

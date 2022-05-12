@@ -14,7 +14,7 @@ const RegistrationPage = () => {
   const [bonus, setBonus] = useState<boolean>(true);
   const [news, setNews] = useState<boolean>(true);
   const inputs = useRef<HTMLInputElement[]>([]);
-  const { changeInput, error, normal } = useValidation();
+  const { changeInput, normal, nextInput } = useValidation();
 
   const inputsValue = [
     {
@@ -74,22 +74,7 @@ const RegistrationPage = () => {
   ];
 
   const changeInputLocal = (event: KeyboardEvent<HTMLInputElement>) => {
-    const { style } = event.currentTarget;
-
-    if (event.code === "Enter") {
-      const index =
-        inputs.current!.findIndex(
-          (item) => item.name === event.currentTarget.name
-        ) + 1;
-
-      if (
-        style.borderColor !== error &&
-        index !== 6 &&
-        event.currentTarget.value.length > 0
-      )
-        inputs.current![index].focus();
-    }
-
+    nextInput(event, inputs, inputs.current.length);
     changeInput(event, name, surname, email, phone, password, confPassword);
   };
 
